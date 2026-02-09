@@ -43,3 +43,5 @@ todos.json
 
 # Claude Code
 .claude/
+
+.agents/
