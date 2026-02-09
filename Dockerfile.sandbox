@@ -1,0 +1,12 @@
+FROM oven/bun:1
+
+WORKDIR /app
+
+# Runtime defaults for services started inside the sandbox.
+ENV HOST=0.0.0.0
+ENV VITE_HOST=0.0.0.0
+
+EXPOSE 5173
+
+# Keep container alive; backend will exec commands inside it.
+CMD ["tail", "-f", "/dev/null"]

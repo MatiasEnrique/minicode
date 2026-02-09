@@ -1,0 +1,2 @@
+ALTER TABLE "agent_states" ADD CONSTRAINT "agent_states_project_id_unique" UNIQUE("project_id");--> statement-breakpoint
+ALTER TABLE "project_files" ADD CONSTRAINT "project_files_project_id_path_unique" UNIQUE("project_id","path");
